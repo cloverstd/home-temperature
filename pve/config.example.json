@@ -1,0 +1,8 @@
+{
+  "mqtt_host": "mqtt.example.lan",
+  "mqtt_port": 1883,
+  "interval": 60,
+  "snmp_host": "nas.example.lan",
+  "snmp_user": "snmpuser",
+  "snmp_community": ""
+}

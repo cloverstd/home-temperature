@@ -1,0 +1,5 @@
+# Copy to /etc/ha-metrics.conf on the router and fill in your values.
+# Internal addresses, hostnames and usernames belong here, never in git.
+MQTT_HOST=mqtt.example.lan
+MQTT_PORT=1883
+INTERVAL=60

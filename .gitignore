@@ -1,0 +1,11 @@
+.DS_Store
+*.pyc
+__pycache__/
+
+# Local configuration holds internal IPs, hostnames and usernames.
+/etc/ha-metrics.json
+/etc/ha-metrics.conf
+pve/config.json
+openwrt/ha-metrics.conf
+*.local.json
+*.local.conf

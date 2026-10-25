@@ -1,0 +1,23 @@
+[Unit]
+Description=Home Assistant metrics collector (PVE + QNAP)
+Documentation=https://github.com/cloverstd/home-temperature
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ha-metrics.py
+Restart=always
+RestartSec=10
+User=root
+Group=root
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ha-metrics
+
+# Keep the collector cheap; it only reads sysfs and runs snmpget periodically.
+Nice=10
+MemoryMax=128M
+
+[Install]
+WantedBy=multi-user.target
